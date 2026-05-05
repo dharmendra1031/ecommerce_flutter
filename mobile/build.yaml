@@ -1,0 +1,14 @@
+targets:
+  $default:
+    builders:
+      freezed:
+        options:
+          explicit_to_json: true
+      json_serializable:
+        options:
+          explicit_to_json: true
+          field_rename: snake
+      riverpod_generator:
+        options:
+          # Generates providers with the @riverpod annotation
+          # and family variants automatically
